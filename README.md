@@ -142,18 +142,29 @@
 
 ```
 - [ ] Can use Array#push in JavaScript
-```javascript
+```es6
 > [1, 2, 3].push(4) // [1, 2, 3, 4]
-< 4
-> let arr = [1, 5, 10]
-< undefined
-> arr.push(15)
-< 15
+4
 
+> let arr = [1, 5, 10]
+undefined
+
+> arr.push(15)
+15
+
+> arr
+[1, 5, 10, 15]
 ```
 - [ ] Can use Array#pop in JavaScript
-```bash
+```es6
+> let arr = [1, 3, 5]
+undefined
 
+> arr.pop()
+5
+
+> arr
+[1, 3]
 ```
 - [ ] Can use Array#shift in JavaScript
 ```bash
