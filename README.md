@@ -19,7 +19,7 @@
 ```
 - [ ] Can describe a Array
 ```bash
-
+  An ordered list - ex. [1, 2, 3]
 ```
 - [ ] Can describe a Set
 ```bash
@@ -35,7 +35,8 @@
 ```
 - [ ] Can describe a pure vs. impure function
 ```bash
-
+A pure function does not reference or mutate objects or variables outside of its scope.
+Given the same input will always return the same value.
 ```
 - [ ] Can describe operator precedence
 ```bash
@@ -43,7 +44,7 @@
 ```
 - [ ] Can describe the push Array method
 ```bash
-
+ 
 ```
 - [ ] Can describe the pop Array method
 ```bash
@@ -149,8 +150,12 @@ for (i = 0; i > 101; i++) {
 
 ```
 - [ ] Can describe the difference between == and === in JavaScript
-```bash
-
+```es6
+const x = 12
+console.log(x === '12') // False - Triple Equal checks for type
+console.log(x === 12) // True
+console.log(x == 12) // True - Double Equal DOES NOT check for type and will do type coercion
+console.log(x == '12') // True
 ```
 - [ ] Can describe the difference between var, let, and const in JavaScript
 ```bash
@@ -182,12 +187,12 @@ undefined
 [1, 3]
 ```
 - [ ] Can use Array#shift in JavaScript
-```bash
-
+```es6
+[1, 2, 3].shift() // returns 1
 ```
 - [ ] Can use Array#unshift in JavaScript
-```bash
-
+```es6
+[1, 2, 3].unshift(0) // returns [0, 1, 2, 3]
 ```
 - [ ] Can use Array#forEach in JavaScript
 ```bash
@@ -206,16 +211,22 @@ undefined
 
 ```
 - [ ] Can declare local vs. global variables in JavaScript
-```bash
+```es6
+let gVar = 5 // global variable
+
+let myfunction = function(){
+ let lVar = 10 // local variable
+ }
 
 ```
 - [ ] Can get all the keys on a JavaScript object
 ```bash
-
+Object.keys(obj) // returns an array of enumerable keys
+Object.getOwnPropertyNames(obj)// returns an array of all keys
 ```
 - [ ] Can get all the values on a JavaScript object
 ```bash
-
+ Object.values(obj) // returns an array of values
 ```
 - [ ] Can write a closure in JavaScript
 ```bash
@@ -230,21 +241,23 @@ undefined
 
 ```
 - [ ] Can split a string into an array in JavaScript
-```bash
-
+```es6
+ "1,2,3,4,5,6".split(',') // returns ["1", "2", "3", "4", "5", "6"]
 ```
 - [ ] Can join an array into a string in JavaScript
-```bash
+```es6
+[1, 2, 3].toString() // returns "1,2,3"
 
+[1, 2, [[3, [[4]], [[5]]], [6]]].toString(); // returns "1,2,3,4,5,6" -- Flattens out the array
 ```
 # Phase 2
 - [ ] Can describe JavaScript hoisting
 ```bash
 
 ```
-- [ ] Can write an immediately invoked function expressions in JavaScript
+- [ ] Can write an immediately invoked function expression in JavaScript
 ```bash
-
+( function(a, b) {return a + b} )();
 ```
 - [ ] Can describe why immediately invoked function expressions are useful in JavaScript
 ```bash
@@ -276,15 +289,20 @@ undefined
 ```
 - [ ] Can describe what a "higher order function" is in JavaScript
 ```es6
-	// A function that takes in a function as an argument and returns a function upon completion
+ A function that takes functions as arguments and returns functions
 ```
 - [ ] Can write and example of a "higher order function" is in JavaScript
 ```es6
 
 ```
 - [ ] Can describe the differences between bind, call, apply in JavaScript
-```bash
+```es6
+var bound =  myFunction.bind(obj) // Bind creates a new function called bound with Myfunction as a method on obj
 
+// Call temporaraly attaches a method to an object and runs it
+customMethod.call(obj, 22) // call
+customMethod.apply(obj, arr)
+Apply does what call does and also attaches an externally scoped variable as the function's arguement
 ```
 - [ ] Can describe what a pure JavaScript function is
 
