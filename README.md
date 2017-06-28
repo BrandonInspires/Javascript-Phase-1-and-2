@@ -2,16 +2,22 @@
 
 # Phase 1
 - [ ] Can describe what a variable is
-```bash
-
+```es6
+ A variable is a placeholder for a value stored in a particular memory location
 ```
 - [ ] Can describe the difference between a local and global variable
-```bash
-
+```es6
+var globalVar = 10
+var myFunction = function (){
+	var localVar = 20
+}
+// A local variable is only accessable within its lexical scope
 ```
 - [ ] Can describe a Function
-```bash
-
+```es6
+function (parameters) {
+	expression = do something + parameters
+}
 ```
 - [ ] Can describe a Hash
 ```bash
@@ -30,8 +36,8 @@
 
 ```
 - [ ] Can describe an "if statement"
-```bash
-
+```es6
+ if (condition) {expression} else {expression}
 ```
 - [ ] Can describe a pure vs. impure function
 ```bash
@@ -44,19 +50,19 @@ Given the same input will always return the same value.
 ```
 - [ ] Can describe the push Array method
 ```bash
- 
+ [1,2,3,4].push(5) // [1,2,3,4,5] // adds an element to the end of an array
 ```
 - [ ] Can describe the pop Array method
-```bash
-
+```es6
+[1,2,3,4].pop() // [1,2,3] takes an element off the back of the array
 ```
 - [ ] Can describe the shift Array method
-```bash
-
+```es6
+[1,2,3,4].shift() // returns [2,3,4] // removes an element from the beginning of the array
 ```
 - [ ] Can describe the unshift Array method
-```bash
-
+```es6
+[2,3,4].unshift(0, 1) // returns [0,1,2,3,4]
 ```
 - [ ] Can describe the each Array method
 ```bash
@@ -76,36 +82,43 @@ Given the same input will always return the same value.
 ```
 - [ ] Can describe a closure
 ```bash
-
+A closure is a function that references or mutates variables outside of its own scope.
 ```
 - [ ] Can write a Function in JavaScript
-```bash
-
+```es6
+function FunctionName(parameters){ //Do Something }
 ```
 - [ ] Can write an Object literal in JavaScript
 ```bash
-
+var myObject = {"Name": "Brandon", "Age": 34}
 ```
 - [ ] Can write an Array literal in JavaScript
 ```bash
-
+ var myArray = [1,2,3,4]
 ```
 - [ ] Can write an String literal in JavaScript
 ```bash
-
+var myString = "Hello, this is a string"
 ```
 - [ ] Can write an Number literal in JavaScript
 ```bash
-
+var x = 5;
 ```
 - [ ] Can write an if/else statement in JavaScript
-```bash
+```es6
+function isNumber(parameter) {
+	if (typeof(parameter) == "Number") {
+	return 'The argument is a number'
+	} else {
+		return 'The argument is not a number'
+	}
+}
 
 ```
 - [ ] Can write a switch statement in JavaScript
 ```es6
 function FizzBuzz(){
-
+var arr = 
 	switch (true) {
 	case num % 3 == 0 && num % 5 == 0:
 	console.log('Fizz');
