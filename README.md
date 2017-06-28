@@ -252,13 +252,14 @@
 
 ```
 - [ ] Can describe what a pure JavaScript function is
-```bash
+```markdown
  A pure function:
  1. Must take arguments
  1. Given the same inputs will always produce the same output
  1. Does not produce [side effects](https://en.wikipedia.org/wiki/Side_effect_%28computer_science%29)
  1. Cannot call impure functions
- 
+ ```
+ ```javascript
  let myVar = 5
  function doubleNumber(){ // impure function - relies on variable in the parent scope
   return myVar * 2
