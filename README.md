@@ -19,7 +19,7 @@
 ```
 - [ ] Can describe a Array
 ```bash
-
+  An ordered list - ex. [1, 2, 3]
 ```
 - [ ] Can describe a Set
 ```bash
@@ -35,7 +35,8 @@
 ```
 - [ ] Can describe a pure vs. impure function
 ```bash
-
+A pure function does not reference or mutate objects or variables outside of its scope.
+Given the same input will always return the same value.
 ```
 - [ ] Can describe operator precedence
 ```bash
@@ -43,7 +44,7 @@
 ```
 - [ ] Can describe the push Array method
 ```bash
-
+ 
 ```
 - [ ] Can describe the pop Array method
 ```bash
@@ -134,8 +135,12 @@
 
 ```
 - [ ] Can describe the difference between == and === in JavaScript
-```bash
-
+```es6
+const x = 12
+console.log(x === '12') // False - Triple Equal checks for type
+console.log(x === 12) // True
+console.log(x == 12) // True - Double Equal DOES NOT check for type and will do type coercion
+console.log(x == '12') // True
 ```
 - [ ] Can describe the difference between var, let, and const in JavaScript
 ```bash
@@ -191,16 +196,22 @@ undefined
 
 ```
 - [ ] Can declare local vs. global variables in JavaScript
-```bash
+```es6
+let gVar = 5 // global variable
+
+let myfunction = function(){
+ let lVar = 10 // local variable
+ }
 
 ```
 - [ ] Can get all the keys on a JavaScript object
 ```bash
-
+Object.keys(obj) // returns an array of enumerable keys
+Object.getOwnPropertyNames(obj)// returns an array of all keys
 ```
 - [ ] Can get all the values on a JavaScript object
 ```bash
-
+ Object.values(obj) // returns an array of values
 ```
 - [ ] Can write a closure in JavaScript
 ```bash
@@ -216,7 +227,7 @@ undefined
 ```
 - [ ] Can split a string into an array in JavaScript
 ```es6
-
+ "1,2,3,4,5,6".split(',') // returns ["1", "2", "3", "4", "5", "6"]
 ```
 - [ ] Can join an array into a string in JavaScript
 ```es6
