@@ -97,21 +97,36 @@
 ```bash
 
 ```
-- [ ] Can write and if/else statement in JavaScript
+- [ ] Can write an if/else statement in JavaScript
 ```bash
 
 ```
-- [ ] Can write and switch statement in JavaScript
+- [ ] Can write a switch statement in JavaScript
+```es6
+function FizzBuzz(){
+
+	switch (true) {
+	case num % 3 == 0 && num % 5 == 0:
+	console.log('Fizz');
+	break;
+	case num % 3 == 0:
+	console.log('Buzz')
+	break;
+	default:
+	console.log(num)
+	break;
+	}
+}
+```
+- [ ] Can write a while loop in JavaScript
 ```bash
 
 ```
-- [ ] Can write and while loop in JavaScript
-```bash
-
-```
-- [ ] Can write and for loop in JavaScript
-```bash
-
+- [ ] Can write a for loop in JavaScript
+```es6
+for (i = 0; i > 101; i++) {
+	console.log(i)
+}
 ```
 - [ ] Can write a pure function in JavaScript
 ```bash
@@ -260,11 +275,11 @@ undefined
 
 ```
 - [ ] Can describe what a "higher order function" is in JavaScript
-```bash
-
+```es6
+	// A function that takes in a function as an argument and returns a function upon completion
 ```
 - [ ] Can write and example of a "higher order function" is in JavaScript
-```bash
+```es6
 
 ```
 - [ ] Can describe the differences between bind, call, apply in JavaScript
