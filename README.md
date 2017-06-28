@@ -258,6 +258,7 @@
 
  A pure function:
  1. Must take arguments
+ 1. Does not mutate state outside of its scope
  1. Given the same inputs will always produce the same output
  1. Does not produce [side effects](https://en.wikipedia.org/wiki/Side_effect_%28computer_science%29)
  1. Cannot call impure functions
@@ -273,18 +274,8 @@
  }
 ```
 
-Reading
-Learn JS tutorial
-https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS
-https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes
-http://eloquentjavascript.net/1st_edition/chapter8.html
-Watching
 
-Google Tech Talk - Introduction to JavaScript and Browser DOM
-Object Oriented JavaScript(1hr)
-JavaBrains course on Scopes & Closures
-JavaBrains course on Prototypes
 Exercises
-Complete the Object Oriented course on TeamTreeHouse
-Complete the Object Oriented exercises on FreeCodeCamp
-TodoList
+- [ ] Complete the Object Oriented course on TeamTreeHouse
+- [ ] Complete the Object Oriented exercises on FreeCodeCamp
+- [ ] TodoList
