@@ -1,4 +1,6 @@
 # Javascript-Phase-1-and-2
+
+# Phase 1
 - [ ] Can describe what a variable is
 ```bash
 
@@ -203,6 +205,7 @@
 ```bash
 
 ```
+# Phase 2
 - [ ] Can describe JavaScript hoisting
 ```bash
 
