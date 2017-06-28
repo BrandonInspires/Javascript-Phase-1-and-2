@@ -147,20 +147,22 @@ for (i = 0; i > 101; i++) {
 
 ```
 - [ ] Can set the value of a property on a JavaScript Object using . syntax
-```bash
-
+```es6
+var myObj = {}; myObj.name = "Brandon" 
+myObj // returns Object { name: "Brandon" }
 ```
 - [ ] Can set the value of a property on a JavaScript Object using [] syntax
-```bash
-
+```es6
+var myObj = {}; myObj["name"] = "George" // key must be in quotations
+myObj // returns Object { name: "George" }
 ```
 - [ ] Can get the value of a property on a JavaScript Object using . syntax
-```bash
-
+```es6
+myObj.name
 ```
 - [ ] Can get the value of a property on a JavaScript Object using [] syntax
-```bash
-
+```es6
+myObj["name"] // must use quotes
 ```
 - [ ] Can describe the difference between == and === in JavaScript
 ```es6
