@@ -142,7 +142,13 @@
 
 ```
 - [ ] Can use Array#push in JavaScript
-```bash
+```javascript
+> [1, 2, 3].push(4) // [1, 2, 3, 4]
+< 4
+> let arr = [1, 5, 10]
+< undefined
+> arr.push(15)
+< 15
 
 ```
 - [ ] Can use Array#pop in JavaScript
@@ -192,7 +198,7 @@
 - [ ] Can pass multiple objects into a function using a plain object as a single argument, in 
 ```bash
 
-```JavaScript
+```
 - [ ] Can describe lexical scope inheritance in JavaScript
 ```bash
 
