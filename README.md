@@ -29,7 +29,7 @@ function (parameters) {
 ```
 - [ ] Can describe a Set
 ```bash
-
+ An object that stores unique values of any type (primative or reference)
 ```
 - [ ] Can describe the ! (bang) operator
 ```bash
@@ -244,12 +244,18 @@ Object.getOwnPropertyNames(obj)// returns an array of all keys
  Object.values(obj) // returns an array of values
 ```
 - [ ] Can write a closure in JavaScript
-```bash
-
+```es6
+var myFunction = function(){
+	var i = 0;
+	return function closureFunction()
+	{i++; console.log (i)};
+}
 ```
 - [ ] Can pass multiple objects into a function using a plain object as a single argument, in 
-```bash
-
+```es6
+var array = [1, 2, 3, 4, 5]
+function addOne(num) { return num + 1 }
+addOne(...array)
 ```
 - [ ] Can describe lexical scope inheritance in JavaScript
 ```bash
