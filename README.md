@@ -273,8 +273,8 @@ addOne(...array)
 ```
 # Phase 2
 - [ ] Can describe JavaScript hoisting
-```bash
-
+```es6	
+In a js file, variables are loaded into memory before code is run so that variables can be called before they are declared
 ```
 - [ ] Can write an immediately invoked function expression in JavaScript
 ```bash
@@ -282,15 +282,21 @@ addOne(...array)
 ```
 - [ ] Can describe why immediately invoked function expressions are useful in JavaScript
 ```bash
-
+It's useful for running some function or performing some task once and throwing it away. It's useful for not polluting the global scope and for maintaining privacy.
 ```
 - [ ] Can define a JavaScript Constructor
 ```bash
-
+A Javascript Constructor is a special method for instantiating an object from a class.
+A special object used to create and initialize objects based on its properties
 ```
 - [ ] Can add properties to the prototype of a JavaScript Constructor
-```bash
+```es6
+function MyConstructor (argument1, argument2){
+	this.argument1 = argument1;
+	this.argument2 = argument2;
+}
 
+m
 ```
 - [ ] Can describe what a closure is
 ```bash
