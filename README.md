@@ -296,22 +296,58 @@ function MyConstructor (argument1, argument2){
 	this.argument2 = argument2;
 }
 
-m
+MyConstructor.prototype.sum = function() {
+	this.argument1 + this.argument2
+}
+MyConstructor.prototype.otherValue = 10
 ```
 - [ ] Can describe what a closure is
 ```bash
-
+ A closure is a function that references variables in its parent scope(s).
 ```
 - [ ] Can give an example of when one might use a closures
 ```bash
+function add(){
+	todoList = []
+	changelog = []
+	changelog.push(new Date)
+	return function (todo) {
+	todoList.push(todo)
+	changelog.push(new Date)
+	}
+}
+// function creates a semi-hidden time log and time entry when functions are called.
+var addTodo = (function add(){
+	todoList = []
+	changelog = []
+	changelog.push("created new todo list:" + new Date)
+	return function (todo) {
+	todoList.push(todo)
+	changelog.push("add: " + new Date)
+	}
+})()
 
+
+
+var addTodo = add()
 ```
 - [ ] Can describe what the this operator is in JavaScript
-```bash
-
+```es6	
+"this" when used inside a function is the object that owns the function. 
+When used inside an object it refers to the object itself
+When used on a constructor it will refer to the specific instance 
 ```
 - [ ] Can show at least three ways to declare what this will be when calling a function in JavaScript
-```bash
+```es6
+myConstructor(name, age){
+	this.name = name;
+	this.age = age;
+}
+
+function(){
+	this
+}
+
 
 ```
 - [ ] Can describe what a "higher order function" is in JavaScript
@@ -320,7 +356,9 @@ m
 ```
 - [ ] Can write and example of a "higher order function" is in JavaScript
 ```es6
-
+function add(x) {
+	return function (y){return x + y}
+}
 ```
 - [ ] Can describe the differences between bind, call, apply in JavaScript
 ```es6
